@@ -8,7 +8,7 @@ const Header = (props) => (
   <header>
     <AuthConsumer>
       {
-        ({ isAuth }) =>  (
+        ({ isAuth, login, logout }) => (
             <React.Fragment>
               <h3>
                <Link to="/">
@@ -20,12 +20,12 @@ const Header = (props) => (
                    <Link to="/dashboard">
                      Dashboard
                    </Link>
-                   <button>
+                   <button onClick={logout}>
                      logout
                    </button>
                  </ul>
                ) : (
-                 <button>login</button>
+                 <button onClick={login}>login</button>
               )}
             </React.Fragment>
           )
