@@ -1,5 +1,15 @@
 New context API exercise
 
+- Have a look at AuthContext.js
+
+Once you understand the code:
+
+1. Declare a variable called AuthContext and set it to React.createContext() on line 3
+
+2. export the AuthProvider and AuthConsumer on line 35
+
+Export the AuthProvider component to define our state (whether the user is logged in) and pass its state to the value prop on the Provider.
+
 - In App.js we need to wrap our Header inside the AuthProvider
 
 - In Header.js use a render callback inside the AuthConsumer and conditionally display a login or logout button and link.
@@ -39,7 +49,7 @@ Remember Context Consumers must have a function as their direct child. This will
 
 - Because isAuth is set to false, only the login button will be visible. Try changing the value to true in the state (it’ll switch to the logout button).
 
-- In AuthContext, add the methods login and logout in addition to isAuth in the AuthContext.Provider
+- In AuthContext, uncomment and add the methods login and logout in addition to isAuth in the AuthContext.Provider
 
 - Lets create a ProtectedRoute component:  
 
