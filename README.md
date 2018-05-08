@@ -2,9 +2,14 @@
 
 - Have a look at AuthContext.js
 
+We need to fix the error
+
 Once you understand the code:
 
-1. Declare a variable called AuthContext and set it to React.createContext() on line 3
+1. Declare a variable called AuthContext and set it to React.createContext() on line 3, then the app should render. eg:
+```javascript
+ const AuthContext = React.createContext()
+ ```
 
 2. export the AuthProvider and AuthConsumer on line 35
 
