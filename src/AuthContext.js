@@ -10,8 +10,6 @@ class AuthProvider extends React.Component {
   }
 
   login = () => {
-    // setting timeout to mimic an async login
-    // setTimeout(() => this.setState({ isAuth: true }), 1000)
     this.setState({ isAuth: true })
   }
   logout = () => {
@@ -23,9 +21,8 @@ class AuthProvider extends React.Component {
     return (
       <AuthContext.Provider
         value={{
-          isAuth: this.state.isAuth,
-          login: this.login,
-          logout: this.logout
+          isAuth: this.state.isAuth
+          // Add login and logout here
         }}
       >
         {this.props.children}
