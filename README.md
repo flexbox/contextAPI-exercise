@@ -27,14 +27,6 @@ Export the AuthProvider component to define our state (whether the user is logge
 
 - Have a look at AuthContext.js
 
-Once you understand the code:
-
-1. Declare a variable called AuthContext and set it to React.createContext() on line 3
-
-2. export the AuthProvider and AuthConsumer on line 35
-
-Export the AuthProvider component to define our state (whether the user is logged in) and pass its state to the value prop on the Provider.
-
 - In App.js we need to wrap our Header inside the AuthProvider
 
 - In Header.js use a render callback inside the AuthConsumer and conditionally display a login or logout button and link.
