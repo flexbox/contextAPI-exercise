@@ -1,7 +1,6 @@
 import React from 'react'
 
-const AuthContext = React.createContext()
-
+//Decalre AuthContext here
 
 class AuthProvider extends React.Component {
   constructor() {
@@ -9,12 +8,12 @@ class AuthProvider extends React.Component {
     this.state = { isAuth: false }
   }
 
-  login = () => {
-    this.setState({ isAuth: true })
-  }
-  logout = () => {
-    this.setState({ isAuth: false })
-  }
+  // login = () => {
+  //   this.setState({ isAuth: true })
+  // }
+  // logout = () => {
+  //   this.setState({ isAuth: false })
+  // }
 
   render() {
     // Inside the return we have declared the <AuthContext.Provider /> and isAuth in an object with the current state
@@ -32,5 +31,4 @@ class AuthProvider extends React.Component {
 }
 
 const AuthConsumer = AuthContext.Consumer
-
-export { AuthProvider, AuthConsumer }
+// export both AuthProvider and AuthConsumer so they can be imported like this: import { AuthProvider } from './AuthContext'
