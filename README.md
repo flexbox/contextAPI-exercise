@@ -1,4 +1,4 @@
 New context API exercise
 
-- 
-- In App.js add your ProtectedRoute
+- Go to ProtectedRoute and implement the missing code
+- In App.js add your ProtectedRoute and use it on line 18

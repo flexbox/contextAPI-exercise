@@ -14,7 +14,8 @@ const App = () => (
       <AuthProvider>
         <Header />
         <Switch>
-          {/* Add your ProtectedRoute here! */}
+          {/* Add your ProtectedRoute for Dashboard instead of the line below! */}
+          <Route path="/dashboard" component={Dashboard} />
           <Route path="/" component={Landing} />
         </Switch>
       </AuthProvider>

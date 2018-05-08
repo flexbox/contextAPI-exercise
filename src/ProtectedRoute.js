@@ -7,10 +7,10 @@ const ProtectedRoute = ({ component: Component, ...rest }) => (
     {({ isAuth }) => (
       <Route
         render={
-          props =>
+          props => (
             isAuth
-            ? <Component {...props} />
-            : <Redirect to="/" />
+            // Add a ternary operator here to direct the user to the dashboard or redirect to "/" depending on the value of isAuth
+          )
         }
         {...rest}
       />
