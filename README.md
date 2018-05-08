@@ -1,6 +1,6 @@
 New context API exercise
 
-
+- In App.js we need to wrap our Header inside the AuthProvider
 
 - In Header.js use a render callback inside the AuthConsumer and conditionally display a login or logout button and link.
 
@@ -51,5 +51,6 @@ const Dashboard = () => <h2>User Dashboard</h2>
 export default Dashboard
 ```
 
-- Go to ProtectedRoute and implement the missing code
-- In App.js add your ProtectedRoute and use it on line 18
+- Go to ProtectedRoute.js and implement the missing code
+
+- In App.js add your ProtectedRoute and use it on line 18, you'll need to also add a Switch for react router if you haven't already done so, if you'd like a hint, you can have a look at the branch "sol-final2"
