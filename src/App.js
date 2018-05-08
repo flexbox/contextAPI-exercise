@@ -4,7 +4,7 @@ import { AuthProvider } from './AuthContext'
 import Header from './Header'
 import Landing from './Landing'
 import Dashboard from './Dashboard'
-import ProtectedRoute from './ProtectedRoute'
+// import ProtectedRoute from './ProtectedRoute'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
@@ -14,7 +14,7 @@ const App = () => (
       <AuthProvider>
         <Header />
         <Switch>
-          <ProtectedRoute path="/dashboard" component={Dashboard} />
+          {/* Add your ProtectedRoute here! */}
           <Route path="/" component={Landing} />
         </Switch>
       </AuthProvider>
