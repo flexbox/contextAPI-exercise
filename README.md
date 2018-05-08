@@ -1,5 +1,9 @@
 New context API exercise
 
+- Now inside Header.js finish off the code and import our AuthConsumer. Use the value of isAuth to conditionally render the link to /dashboard
+
+- Because isAuth is set to false, only the login button will be visible. Try changing the value to true in the state (it’ll switch to the logout button).
+
 - In AuthContext, add the methods login and logout in addition to isAuth in the AuthContext.Provider
 
 - Lets create a ProtectedRoute component:  

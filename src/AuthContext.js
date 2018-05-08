@@ -17,7 +17,7 @@ class AuthProvider extends React.Component {
   }
 
   render() {
-    // Inside the return, declare the <AuthContext.Provider /> and it isAuth in an object with the current state
+    // Inside the return we have declared the <AuthContext.Provider /> and isAuth in an object with the current state
     return (
       <AuthContext.Provider
         value={{

@@ -8,14 +8,15 @@ const Header = (props) => (
   <header>
     <AuthConsumer>
       {
-        ({ isAuth, login, logout }) => (
+        ({ isAuth }) => (
             <React.Fragment>
               <h3>
                <Link to="/">
                  HOME
                </Link>
               </h3>
-              {isAuth ? (
+
+              {/* Modify the code here to conditionally render the link and logout button or just the login button */}
                  <ul>
                    <Link to="/dashboard">
                      Dashboard
@@ -24,9 +25,9 @@ const Header = (props) => (
                      logout
                    </button>
                  </ul>
-               ) : (
+
                  <button onClick={login}>login</button>
-              )}
+
             </React.Fragment>
           )
       }
