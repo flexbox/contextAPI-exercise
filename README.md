@@ -1,4 +1,14 @@
-**New context API exercise**
+## How to install
+
+- `git clone git@github.com:leanjscom/contextAPI-exercise.git`
+- `cd contextAPI-exercise`
+- `npm i`
+- `npm start`
+- `Open the Browser with the url http://localhost:3000` and you will be ready to start
+- It will be displaying an error to start with which you'll need to fix following the instructions below
+
+
+## New context API exercise
 
 - Have a look at AuthContext.js
 
